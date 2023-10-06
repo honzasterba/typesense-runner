@@ -1,3 +1,5 @@
+git clone https://github.com/typesense/typesense.git
+
 add-apt-repository -y ppa:ubuntu-toolchain-r/test
 apt-get update
 apt-get install -y g++-10 make git zlib1g-dev m4
