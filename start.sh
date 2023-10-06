@@ -9,7 +9,7 @@ rm -vrf $DATA_DIR/typesense
 
 export TYPESENSE_API_PORT=$PORT
 export TYPESENSE_PEERING_PORT=$((i+1))
-export TYPESENSE_DATADIR=$DATA_DIR/typesense
+export TYPESENSE_DATA_DIR=$DATA_DIR/typesense
 mkdir -pv $TYPESENSE_DATA_DIR
 
 ./typesense-server
