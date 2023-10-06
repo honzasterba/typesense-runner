@@ -1,8 +1,9 @@
 #!/bin/sh
 
 env
-stat $TYPESENSE_DATA_DIR
-mkdir -p $TYPESENSE_DATA_DIR
-touch $TYPESENSE_DATA_DIR/.writable-check
+mkdir -pv $TYPESENSE_DATA_DIR
+ls -la $TYPESENSE_DATA_DIR
+touch -v $TYPESENSE_DATA_DIR/.writable-check
+ls -la $TYPESENSE_DATA_DIR
 
 ./typesense-server
