@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo Data dir is $TYPESENSE_DATA_DIR
 rm -vrf $TYPESENSE_DATA_DIR/*
