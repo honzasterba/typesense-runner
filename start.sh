@@ -1,6 +1,6 @@
 #!/bin/sh
 
-env
+echo Data dir is $TYPESENSE_DATA_DIR
 mkdir -pv $TYPESENSE_DATA_DIR
 ls -la $TYPESENSE_DATA_DIR
 echo Touching
