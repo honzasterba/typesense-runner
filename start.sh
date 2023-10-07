@@ -28,4 +28,4 @@ env | grep TYPESENSE
 
 echo "Starting"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-$DIR/typesense-server
+$DIR/typesense-server $@
