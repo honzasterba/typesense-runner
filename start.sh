@@ -27,4 +27,5 @@ env | grep RAILWAY
 env | grep TYPESENSE
 
 echo "Starting"
-./typesense-server
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+$DIR/typesense-server
