@@ -1,7 +1,5 @@
-FROM ubuntu:22.04
+FROM typesense/typesense:0.25.1
 
-RUN mkdir -p /app
-COPY *.sh /app
-RUN cd app && build.sh
+COPY start.sh /opt
 
-ENTRYPOINT ["/app/start.sh"]
+ENTRYPOINT ["/opt/start.sh"]
