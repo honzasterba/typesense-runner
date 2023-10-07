@@ -1,7 +1,5 @@
 #!/bin/bash
 
-env
-
 # Set some reasonable defaults
 TYPESENSE_API_PORT=${TYPESENSE_API_PORT:=$PORT}
 TYPESENSE_PEERING_PORT=${TYPESENSE_PEERING_PORT:=10001}
@@ -22,6 +20,8 @@ then
   echo "Limiting thread pool size to $TYPESENSE_THREAD_POOL_SIZE_MAX (Railway limitation)"
   TYPESENSE_THREAD_POOL_SIZE=200
 fi
+
+env
 
 ./typesense-server
 
