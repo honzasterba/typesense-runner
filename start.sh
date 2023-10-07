@@ -1,7 +1,9 @@
 #!/bin/bash
 
+env
+
 # Set some reasonable defaults
-TYPESENSE_API_PORT=${TYPESENSE_API_PORT:=10000}
+TYPESENSE_API_PORT=${TYPESENSE_API_PORT:=$PORT}
 TYPESENSE_PEERING_PORT=${TYPESENSE_PEERING_PORT:=10001}
 
 # Prepare nodes config file
