@@ -21,7 +21,10 @@ then
   export TYPESENSE_THREAD_POOL_SIZE=200
 fi
 
-env
+# Print config snapshot
+echo "Configuration:"
+env | grep RAILWAY
+env | grep TYPESENSE
 
+echo "Starting"
 ./typesense-server
-
